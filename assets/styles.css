@@ -896,3 +896,132 @@ h3 {
         font-size: 23px
     }
 }
+
+/* Contact page: balanced layout without the removed enquiry form */
+.contact-section {
+    padding-top: 58px
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 54px;
+    align-items: stretch;
+    max-width: 1120px
+}
+
+.contact-intro {
+    background: var(--lavender);
+    padding: clamp(34px, 5vw, 58px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 430px
+}
+
+.contact-intro h2 {
+    font-size: clamp(38px, 4vw, 54px);
+    line-height: 1.08;
+    margin: 10px 0 20px
+}
+
+.contact-intro>p:not(.eyebrow) {
+    font-size: 17px;
+    color: #625568;
+    max-width: 360px
+}
+
+.contact-signoff {
+    margin-top: 32px !important;
+    font-family: var(--serif);
+    font-size: 22px !important;
+    color: var(--ink) !important
+}
+
+.contact-signoff span {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted)
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px
+}
+
+.contact-option {
+    min-height: 198px;
+    padding: 25px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: transform .2s ease, border-color .2s ease
+}
+
+.contact-option:hover {
+    transform: translateY(-3px);
+    border-color: var(--purple)
+}
+
+.contact-option strong {
+    font-family: var(--serif);
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--ink)
+}
+
+.contact-option>span:last-child {
+    font-size: 14px;
+    color: var(--muted);
+    overflow-wrap: anywhere
+}
+
+.contact-kicker {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    color: var(--purple)
+}
+
+.contact-option-featured {
+    background: #684875;
+    border-color: #684875
+}
+
+.contact-option-featured .contact-kicker,
+.contact-option-featured strong,
+.contact-option-featured>span:last-child {
+    color: #fff
+}
+
+@media(max-width:850px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 22px
+    }
+
+    .contact-intro {
+        min-height: 300px
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media(max-width:520px) {
+    .contact-options {
+        grid-template-columns: 1fr
+    }
+
+    .contact-option {
+        min-height: 145px
+    }
+}
