@@ -21,7 +21,7 @@ Static responsive website using HTML, CSS and JavaScript. Existing lavender, blu
 ## IMPORTANT before deployment
 The domain is not yet confirmed. Replace every `YOUR-DOMAIN-HERE` placeholder in canonical URLs, social metadata, JSON-LD, `robots.txt` and `sitemap.xml`. Do not submit the placeholder sitemap to search engines.
 
-Read `CLIENT_CONTENT_AND_SEO_NOTES.md` for required client confirmations and missing content notes.
+Follow the **Post-Domain Launch Checklist** in `CLIENT_CONTENT_AND_SEO_NOTES.md` for exact steps and a one-line automated script to replace the placeholders across all files once the domain is confirmed.
 
 ## Contact details
 Copied from the client-provided source and must be verified before publication:
